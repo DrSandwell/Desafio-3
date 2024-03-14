@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "Remera",
+    "descripcion": "Lana talle M",
+    "precio": 1050,
+    "img": "Sin jpg",
+    "code": "ABCDE",
+    "stock": 12,
+    "id": 2
+  },
+  {
+    "titulo": "Campera",
+    "descripcion": "Cuero",
+    "precio": 15050,
+    "img": "Sin jpg",
+    "code": "ABCD",
+    "stock": 4,
+    "id": 3
+  }
+]
