@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function createProductsFile() {
+/* function createProductsFile() {
     const products = [];
 
     try {
@@ -12,7 +12,7 @@ function createProductsFile() {
 }
 
 createProductsFile();
-
+ */
 class ProductManager {
     static ultId = 0;
 
@@ -46,7 +46,7 @@ class ProductManager {
             return null;
         } else {
             console.log("Producto encontrado:", product);
-            return;
+            return product;
         }
     }
 
@@ -102,53 +102,5 @@ class ProductManager {
 
 
 const manager = new ProductManager();
-
-console.log(manager.getProducts());
-
-/* TESTING */
-manager.addProduct({
-    titulo: "producto prueba",
-    descripcion: "Este es un producto prueba",
-    precio: 200,
-    img: "Sin imagen",
-    code: "abc123",
-    stock: 25
-});
-
-manager.addProduct({
-    titulo: "Remera",
-    descripcion: "Lana talle M",
-    precio: 1050,
-    img: "Sin jpg",
-    code: "ABCDE",
-    stock: 12
-});
-
-manager.addProduct({
-    titulo: "Campera",
-    descripcion: "Cuero",
-    precio: 15050,
-    img: "Sin jpg",
-    code: "ABCD",
-    stock: 4
-});
-
-console.log(manager.getProducts());
-
-manager.addProduct({
-    titulo: "Campera ecofriendly",
-    descripcion: "Cuero sintetico",
-    precio: 30100,
-    img: "Sin jpg",
-    code: "ABCD", 
-    stock: 8
-});
-
-
-manager.getProductById(1);
-manager.getProductById(5);
-manager.updateProduct(1, { precio: 150, stock: 15 });
-manager.getProductById(1);
-manager.deleteProduct(1);
-manager.getProductById(1);
-console.log(manager.getProducts());
+module.exports = ProductManager;
+manager.getProductById(2);
